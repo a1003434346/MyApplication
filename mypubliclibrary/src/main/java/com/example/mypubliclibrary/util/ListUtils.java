@@ -45,7 +45,8 @@ public class ListUtils<T> {
      */
     public static <T> void updateListData(List<T> datas, List<T> newDatas) {
         datas.clear();
-        datas.addAll(newDatas);
+        if (newDatas != null)
+            datas.addAll(newDatas);
     }
 
     /**
